@@ -1,0 +1,135 @@
+html{
+  min-height: 100%;
+  margin: 0;
+  background: linear-gradient(#de6262, #ffb88c)
+}
+body{
+  background-repeat: no-repeat;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 24%;
+  overflow: hidden;
+}
+.nav_bar{
+  font-family: "EnceladusReg";
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+}
+a:link{
+  text-decoration: none;
+}
+a:visited { 
+  text-decoration: none;
+  color: black;
+ }
+.current_page{
+  font-family: "EnceladusBold";
+}
+@font-face {
+  font-family: "EnceladusReg";
+  src: url("EnceladusRegular-d9xyE.otf");
+}
+@font-face {
+  font-family: "EnceladusBold";
+  src: url("EnceladusBold-7BrER.otf");
+}
+@font-face {
+  font-family: "EnceladusDemiBold";
+  src: url("EnceladusDemibold-mL18a.otf");
+}
+.greeting{
+  margin-left: 24%;
+  width: 450px;
+  border-radius: 20px;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+  background: linear-gradient(90deg,#43cea2,#086bcf)
+}
+.picture_of_me{
+  margin-left: 49%; 
+  margin-top: -11%;
+  width: 425px;
+  height: 425px;
+  border-radius: 20px;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+}
+.socials_bar{
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 30px;
+}
+.social_logo{
+  width: 55px;
+  height: 55px;
+}
+@keyframes expand{
+  100%{
+    transform: scale(1.1);
+  }
+}
+.social_logo:hover{
+  animation-name: expand;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.project_gif{
+  border-radius: 20px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  position: absolute;
+  width: 425px;
+  height: 190px;
+  border-radius: 25px;
+  opacity: 1;
+}
+.project{
+  border-radius: 20px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  position: absolute;
+  width: 425px;
+  height: 190px;
+  border-radius: 25px;
+  opacity: 1;
+}
+.project:hover{
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.project_gif:hover{
+  cursor: pointer;
+  z-index: 2;
+}
+.project_text{
+  position: absolute;
+  margin-top: 200px; 
+  font-family: EnceladusReg
+}
+.project_div{
+  width: 450px;
+}
+.project_div:hover{
+  animation-name: expand;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.project_container{
+  display: grid;
+  margin-left: 24%;
+  grid-template-columns:475px 475px;
+  grid-template-rows: 250px 250px 250px 250px;
+}
