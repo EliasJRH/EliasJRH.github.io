@@ -1,2 +1,2 @@
 # EliasJRH.github.io
-My personal website
+My personal website (currently not fully responsive)
