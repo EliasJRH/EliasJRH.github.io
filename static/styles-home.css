@@ -43,7 +43,7 @@ a:visited {
   src: url("EnceladusDemibold-mL18a.otf");
 }
 .greeting{
-  margin-left: 24%;
+  margin-left: 26%;
   width: 450px;
   border-radius: 20px;
   border-color: black;
@@ -64,6 +64,7 @@ a:visited {
   display: grid;
   grid-template-columns: 120px 120px 120px;
   margin-left: 55%;
+  padding-top: 5px;
   /* padding: 14px 30px; */
 }
 .social_logo{
@@ -136,8 +137,13 @@ a:visited {
 .project_container{
   display: grid;
   margin-left: 24%;
+  /* margin-top: -7%; */
   grid-template-columns:475px 475px;
   grid-template-rows: 270px 270px 270px 270px;
+}
+.body_container{
+  display:grid;
+  grid-template-columns: 1200px;
 }
 @media (max-width: 360px){
   .project_container{
