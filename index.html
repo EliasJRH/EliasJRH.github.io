@@ -6,8 +6,6 @@
         Elias Hawa - Home
     </title>
     <link rel="stylesheet" href="static/styles-home.css">
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles-home.css') }}"> -->
-    <!-- <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}"> -->
     <link rel="shortcut icon" href="static/favicon.ico">
 </head>
 
@@ -20,7 +18,7 @@
 </div>
 
 
-<div class="intro_div">
+<div class="body_container">
 
     <div class="greeting">
         <h1 style="font-family: EnceladusDemiBold; text-align: center;">Hi there!</h1>
@@ -28,90 +26,103 @@
         <h3 style="font-family: EnceladusReg; padding-left: 3px">Here you can find some info about me and some of the projects I've completed or have contributed to!</h3>
     </div>
 
-    <div>
+    <div style="justify-self: center;">
         <img class="picture_of_me" src="static/me2.png">
         <div class="socials_bar">
             <a href="https://www.instagram.com/eliasjr.jpg/" target="_blank"> <img class="social_logo" src="static/logos/ig_logo.png"> </a>
             <a href="https://www.linkedin.com/in/eliashawa/" target="_blank"> <img class="social_logo" src="static/logos/linked_in_logo2.png"> </a>
             <a href="https://github.com/EliasJRH" target="_blank"> <img class="social_logo" src="static/logos/github_logo.png"> </a>
         </div>
-        
     </div>
 
-</div>
+    <div>
+       <h1 style="font-family: EnceladusDemiBold;">Projects</h1> 
+    </div>
+    
+    <div></div>
 
-<div>
-    <h1 style="font-family: EnceladusDemiBold; margin-left: 25%; margin-top: -2%;">Projects</h1>
-    <div class="project_container">
-        
+    <div>
         <a href="https://github.com/EliasJRH/lineup" target="_blank">
-        <div class="project_div">
-            <img class="project_gif" src="static/projects/lineup/lineupgif.gif">
-            <img class="project" src="static/projects/lineup/lineupgif.jpg">
-            <h4 class="project_text">Lineup - An Event Management Discord Bot</h4>
-        </div>
+            <div class="project_div">
+                <img class="project_gif" src="static/projects/lineup/lineupgif.gif">
+                <img class="project" src="static/projects/lineup/lineupgif.jpg">
+                <h4 class="project_text">Lineup - An Event Management Discord Bot</h4>
+            </div>
         </a>
-
-        <a href="https://github.com/AdiChops/Battlehauz" target="_blank">
-        <div class="project_div">
-            <img class="project_gif" src="static/projects/battlehauz/battlehauz.gif">
-            <img class="project" src="static/projects/battlehauz/battlehauz.jpg">
-            <h4 class="project_text">Battlehauz - A Command Line Interface Game</h4>
-        </div>
-        </a>
-
-        <a href="https://github.com/EliasJRH/Syllogism-Trainer" target="_blank">
-        <div class="project_div">
-            <img class="project_gif" src="static/projects/syllogisticfallacytrainer/syllogisticfallacytrainer.gif">
-            <img class="project" src="static/projects/syllogisticfallacytrainer/syllogisticfallacytrainer.jpg">
-            <h4 class="project_text">Syllogistic Fallacy Trainer</h4>
-        </div>  
-        </a>
-        
-        <a href="https://github.com/EliasJRH/RaffleBot.TF" target="_blank">
-        <div class="project_div">
-            <img class="project_gif" src="static/projects/rafflebottf/rafflebottf.gif">
-            <img class="project" src="static/projects/rafflebottf/rafflebottf.png">
-            <h4 class="project_text">RaffleBot.TF - A Selenium Automated Raffle Entering Web Application </h4>
-        </div> 
-        </a>
-        
-        <a href="https://github.com/EliasJRH/Har0ld-1.5" target="_blank">
-        <div class="project_div">
-            <img class="project_gif" src="static/projects/harold/harold.gif">
-            <img class="project" src="static/projects/harold/harold.jpg">
-            <h4 class="project_text">Harold 1.5 - A Top-Down Zombie Survival Game</h4>
-        </div> 
-        </a>
-
-        <a href="https://github.com/EliasJRH/RCAF-Aptitude-Test" target="_blank">
-        <div class="project_div">
-            <img class="project_gif" src="static/projects/rcafapttest/rcafapttest.gif">
-            <img class="project" src="static/projects/rcafapttest/rcafapttest.png">
-            <h4 class="project_text">Mock RCAF Aptitude Test</h4>
-        </div> 
-        </a>
-
-        <a href="https://github.com/EliasJRH/sudoku" target="_blank">
-        <div class="project_div">
-            <img class="project_gif" src="static/projects/sudoku/sudoku.gif">
-            <img class="project" src="static/projects/sudoku/sudoku.jpg">
-            <h4 class="project_text">Sudoku</h4>
-        </div> 
-        </a>
-
-        <a href="https://github.com/EliasJRH/GameOfLife" target="_blank">
-        <div class="project_div">
-            <img class="project_gif" src="static/projects/gameoflife/gameoflifeprev.gif">
-            <img class="project" src="static/projects/gameoflife/gameoflifeprev.png">
-            <h4 class="project_text">Game Of Life</h4>
-        </div> 
-        </a>
-
     </div>
+
+    <div>
+        <a href="https://github.com/AdiChops/Battlehauz" target="_blank">
+            <div class="project_div">
+                <img class="project_gif" src="static/projects/battlehauz/battlehauz.gif">
+                <img class="project" src="static/projects/battlehauz/battlehauz.jpg">
+                <h4 class="project_text">Battlehauz - A Command Line Interface Game</h4>
+            </div>
+        </a>
+    </div>
+
+    <div>
+        <a href="https://github.com/EliasJRH/Syllogism-Trainer" target="_blank">
+            <div class="project_div">
+                <img class="project_gif" src="static/projects/syllogisticfallacytrainer/syllogisticfallacytrainer.gif">
+                <img class="project" src="static/projects/syllogisticfallacytrainer/syllogisticfallacytrainer.jpg">
+                <h4 class="project_text">Syllogistic Fallacy Trainer</h4>
+            </div>  
+        </a>
+    </div>
+
+    <div>
+        <a href="https://github.com/EliasJRH/RaffleBot.TF" target="_blank">
+            <div class="project_div">
+                <img class="project_gif" src="static/projects/rafflebottf/rafflebottf.gif">
+                <img class="project" src="static/projects/rafflebottf/rafflebottf.png">
+                <h4 class="project_text">RaffleBot.TF - A Selenium Automated Raffle Entering Web Application </h4>
+            </div> 
+        </a>
+    </div>
+
+    <div>
+        <a href="https://github.com/EliasJRH/Har0ld-1.5" target="_blank">
+            <div class="project_div">
+                <img class="project_gif" src="static/projects/harold/harold.gif">
+                <img class="project" src="static/projects/harold/harold.jpg">
+                <h4 class="project_text">Harold 1.5 - A Top-Down Zombie Survival Game</h4>
+            </div> 
+        </a>
+    </div>
+
+    <div>
+        <a href="https://github.com/EliasJRH/RCAF-Aptitude-Test" target="_blank">
+            <div class="project_div">
+                <img class="project_gif" src="static/projects/rcafapttest/rcafapttest.gif">
+                <img class="project" src="static/projects/rcafapttest/rcafapttest.png">
+                <h4 class="project_text">Mock RCAF Aptitude Test</h4>
+            </div> 
+        </a>
+    </div>
+
+    <div>
+        <a href="https://github.com/EliasJRH/sudoku" target="_blank">
+            <div class="project_div">
+                <img class="project_gif" src="static/projects/sudoku/sudoku.gif">
+                <img class="project" src="static/projects/sudoku/sudoku.jpg">
+                <h4 class="project_text">Sudoku</h4>
+            </div> 
+        </a>
+    </div>
+
+    <div>
+        <a href="https://github.com/EliasJRH/GameOfLife" target="_blank">
+            <div class="project_div">
+                <img class="project_gif" src="static/projects/gameoflife/gameoflifeprev.gif">
+                <img class="project" src="static/projects/gameoflife/gameoflifeprev.png">
+                <h4 class="project_text">Game Of Life</h4>
+            </div> 
+        </a>    
+    </div>
+
 </div>
 
-  
 </body>
 
 </html>
