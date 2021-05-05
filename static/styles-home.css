@@ -125,8 +125,6 @@ a:visited {
 }
 .project_container{
   display: grid;
-  /* margin-left: 24%; */
-  /* margin-top: -7%; */
   grid-template-columns:475px 475px;
   grid-template-rows: 270px 270px 270px 270px;
 }
