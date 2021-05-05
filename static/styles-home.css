@@ -21,6 +21,7 @@ ul{
 }
 a:link{
   text-decoration: none;
+  color: black;
 }
 a:visited { 
   text-decoration: none;
@@ -123,15 +124,41 @@ a:visited {
   animation-fill-mode: forwards;
   cursor: pointer;
 }
-.project_container{
-  display: grid;
-  grid-template-columns:475px 475px;
-  grid-template-rows: 270px 270px 270px 270px;
-}
 .body_container{
   display: grid;
   margin-left: 24.2%;
   width: 65%;
   gap: 1.5%;
   grid-template-columns: repeat(auto-fill, minmax(450px, 450px));
+}
+@media only screen and (min-width: 360px) and (max-width: 460px){
+  ul{
+    margin-left: -120px;
+  }
+  .body_container{
+    margin-left: -55px !important;
+  }
+  body{
+    transform: scale(0.75);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 868px){
+  ul{
+    margin-left: -240px;
+  }
+  .picture_of_me{
+    margin-left: 195px;
+  }
+  .socials_bar{
+    margin-left: 260px;
+  }
+  .body_container{
+    margin-left: -80px;
+    width: 100%;
+    column-gap:30%;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+  }
+  body{
+    transform: scale(0.65);
+  }
 }
