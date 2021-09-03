@@ -10,21 +10,17 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="{{ url_for('static', filename='../static/styles/index.css')}}"
+      href="{{ url_for('static', filename='static/styles/index.css')}}"
     />
-    <link rel="stylesheet" href="../static/styles/index.css" />
-    <link rel="shortcut icon" href="../static/images/starman.ico" />
+    <link rel="stylesheet" href="static/styles/index.css" />
+    <link rel="shortcut icon" href="static/images/starman.ico" />
     <script
       src="https://kit.fontawesome.com/83077f7eb5.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <img
-      src="../static/images/ottawa-background.jpg"
-      class="top-image"
-      alt=""
-    />
+    <img src="static/images/ottawa-background.jpg" class="top-image" alt="" />
     <div style="height: 450px; margin: -10px 0 20px -10px; position: relative">
       <div class="vertical-center">
         <i>Hi there, my name is</i>
@@ -66,7 +62,7 @@
         </div>
 
         <img
-          src="../static/images/me.png"
+          src="static/images/me.png"
           alt="A picture of Elias Hawa"
           width="300px;"
           style="
@@ -93,7 +89,7 @@
           <div class="lower-icon">
             <span class="icon-text">Shoot me an email!</span>
             <a href="mailto:elias.hawa2468@gmail.com"
-              ><i class="fas fa-inbox" style="color: black;"></i
+              ><i class="fas fa-inbox" style="color: black"></i
             ></a>
           </div>
         </div>
@@ -122,7 +118,7 @@
       <h2>What have I been up to 🤔</h2>
       <div class="present-work-block">
         <img
-          src="../static/images/blueprint.jpg"
+          src="static/images/blueprint.jpg"
           alt="The logo of Carleton University Blueprint"
           width="200px"
         />
@@ -159,7 +155,7 @@
           <a href="https://ccss.carleton.ca/">here</a>!
         </p>
         <img
-          src="../static/images/ccsslogo.jpg"
+          src="static/images/ccsslogo.jpg"
           alt="The logo of the Carleton Computer Science Society"
           width="200px"
         />
@@ -170,16 +166,17 @@
       <h2>What's next 🖥️</h2>
       <div class="future-work-block">
         <img
-          src="../static/images/current_job.jpg"
+          src="static/images/current_job.jpg"
           alt="A picture of my IBM intern supplies"
           width="200px"
         />
-        <p style="margin: 0">
+        <p style="margin: 0; width: 500px">
           In this upcoming Fall 2021 season, I'll be working on the Cloud and
-          Cognitive Software team at IBM 👁️🐝Ⓜ️. In addition, I'll be taking one
-          extra course at Carleton. In the upcoming Winter 2021/22 season, I'll
-          be returning as a full time student at Carleton University
+          Cognitive Software team at IBM as a software developer intern. I'll be
+          returning as a full time student at Carleton University for Winter
+          2021/22
         </p>
+        <p style="margin: 0; font-size: 150px">👁️🐝Ⓜ️</p>
       </div>
     </div>
 
@@ -187,7 +184,15 @@
 
     <div class="past-work">
       <h2>Some past projects ⚙️</h2>
-      <p>SOON™️</p>
+      <div class="project-container">
+        <div class="project-item">
+          <u>Syllogistic Fallacy Trainer</u><br /><br />
+          A desktop application written in Java to aide high-school philosophy
+          students in understanding syllogistic fallacy problems and how to go
+          about solving them.<br /><br />
+          <a href="/projects/syllogisticfallacytrainer">Read more >></a>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -21,6 +21,15 @@
   }
 }
 
+@keyframes elevate {
+  from {
+    border: none;
+  }
+  to {
+    border: 2px solid black;
+  }
+}
+
 body {
   font-family: "EnceladusBold";
   height: 100%;
@@ -72,10 +81,6 @@ body {
   font-family: "EnceladusBold";
 }
 
-.intro div {
-  width: 633px;
-}
-
 .languages,
 .interests,
 .self,
@@ -90,6 +95,7 @@ body {
 .languages,
 .interests,
 .self {
+  width: 633px;
   text-align: center;
 }
 
@@ -107,32 +113,35 @@ body {
   animation: fadedown 1s ease-in 1s forwards;
 }
 
-.upper-icon, .lower-icon {
+.upper-icon,
+.lower-icon {
   font-size: 60px;
-  width: 100px;
+  width: inherit;
+  height: 110px;
   text-align: center;
   line-height: 0.2px;
 }
 
-.upper-icon a, .lower-icon a{
+.upper-icon a,
+.lower-icon a {
   text-decoration: none;
 }
 
-.upper-icon a:visited, .lower-icon a:visited{
+.upper-icon a:visited,
+.lower-icon a:visited {
   color: inherit;
 }
 
-.upper-icon{
-  height: 220px;
+.upper-icon {
   align-self: flex-start;
 }
 
-.lower-icon{
+.lower-icon {
   height: 150px;
   align-self: flex-end;
 }
 
-.icon-text{
+.icon-text {
   font-size: 15px;
   line-height: inherit;
 }
@@ -141,7 +150,7 @@ body {
   margin-top: 8px;
 }
 
-.fas{
+.fas {
   margin-top: 26px;
 }
 
@@ -172,4 +181,18 @@ body {
 
 .past-work {
   animation: fadedown 1s ease-in 6s forwards;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-item {
+  width: 550px;
+  height: 250px;
+  padding: 50px;
+  background-color: black;
+  color: white;
 }
