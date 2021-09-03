@@ -11,22 +11,12 @@
   src: url("../fonts/EnceladusDemibold-mL18a.otf");
 }
 
-@keyframes fadedowntitle{
-  from{
-    margin-top: -250px;
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-
-@keyframes fadedown{
-  from{
+@keyframes fadedown {
+  from {
     margin-top: -50px;
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
@@ -52,6 +42,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
   animation: fadedown 1s ease-out forwards;
 }
 
@@ -75,54 +66,110 @@ body {
   justify-content: space-evenly;
 }
 
-.title{
+.title {
   text-align: center;
   font-size: 20px;
   font-family: "EnceladusBold";
 }
 
-.intro div{
+.intro div {
   width: 633px;
 }
 
-.languages, .interests, .self, .about-me, .present-work, .future-work, .past-work{
-   opacity: 0;
-   font-size: 25px;
+.languages,
+.interests,
+.self,
+.about-me,
+.present-work,
+.future-work,
+.past-work {
+  opacity: 0;
+  font-size: 25px;
 }
 
-.languages, .interests, .self{
+.languages,
+.interests,
+.self {
   text-align: center;
 }
 
-.languages, .interests{ 
+.languages,
+.interests {
   animation: fadedown 1s ease-in 2s forwards;
 }
 
-.self{
+.self-picture {
+  display: grid;
+  opacity: 0;
+  width: 540px !important;
+  grid-template-columns: 100px 340px 100px;
+  grid-template-rows: 340px;
   animation: fadedown 1s ease-in 1s forwards;
 }
 
-.about-me, .present-work, .future-work, .past-work{
+.upper-icon, .lower-icon {
+  font-size: 60px;
+  width: 100px;
+  text-align: center;
+  line-height: 0.2px;
+}
+
+.upper-icon a, .lower-icon a{
+  text-decoration: none;
+}
+
+.upper-icon a:visited, .lower-icon a:visited{
+  color: inherit;
+}
+
+.upper-icon{
+  height: 220px;
+  align-self: flex-start;
+}
+
+.lower-icon{
+  height: 150px;
+  align-self: flex-end;
+}
+
+.icon-text{
+  font-size: 15px;
+  line-height: inherit;
+}
+
+.fab {
+  margin-top: 8px;
+}
+
+.fas{
+  margin-top: 26px;
+}
+
+.about-me,
+.present-work,
+.future-work,
+.past-work {
   padding: 0 120px;
 }
 
-.about-me{
+.about-me {
   animation: fadedown 1s ease-in 3s forwards;
 }
 
-.present-work{
+.present-work {
   animation: fadedown 1s ease-in 4s forwards;
 }
 
-.present-work-block, .future-work-block{
+.present-work-block,
+.future-work-block {
   display: flex;
   gap: 10px;
 }
 
-.future-work{
+.future-work {
   animation: fadedown 1s ease-in 5s forwards;
 }
 
-.past-work{
-  animation: fadedown 1s ease-in 5s forwards;
+.past-work {
+  animation: fadedown 1s ease-in 6s forwards;
 }

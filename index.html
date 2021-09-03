@@ -10,17 +10,26 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="{{ url_for('static', filename='styles/index.css')}}"
+      href="{{ url_for('static', filename='../static/styles/index.css')}}"
     />
-    <link rel="stylesheet" href="static/styles/index.css" />
-    <link rel="shortcut icon" href="static/images/starman.ico" />
+    <link rel="stylesheet" href="../static/styles/index.css" />
+    <link rel="shortcut icon" href="../static/images/starman.ico" />
+    <script
+      src="https://kit.fontawesome.com/83077f7eb5.js"
+      crossorigin="anonymous"
+    ></script>
+    {{ fontawesome_css() }}
   </head>
   <body>
-    <img src="static/images/ottawa-background.jpg" class="top-image" alt="" />
+    <img
+      src="../static/images/ottawa-background.jpg"
+      class="top-image"
+      alt=""
+    />
     <div style="height: 450px; margin: -10px 0 20px -10px; position: relative">
       <div class="vertical-center">
-        <i style="padding-left: 135px">Hi there, my name is</i>
-        <p style="padding-left: 100px">Elias Hawa</p>
+        <i>Hi there, my name is</i>
+        <p>Elias Hawa</p>
         <i>Software Developer and Computer Science Student</i>
       </div>
     </div>
@@ -33,17 +42,61 @@
         <p>HTML/CSS📄</p>
         <p>Javascript/Node💻</p>
       </div>
-      <div class="self">
-        <div class="self-picture">
-          <img
-            src="static/images/me.png"
-            alt="A picture of Elias Hawa"
-            width="300px;"
-            style="
-              border: 20px rgba(19, 18, 18, 0.699) solid;
-              border-radius: 100%;
-            "
-          />
+      <div class="self-picture">
+        <div
+          style="
+            display: flex;
+            width: 100px;
+            flex-wrap: wrap;
+            justify-content: center;
+          "
+        >
+          <div class="upper-icon">
+            <span class="icon-text">Check out my Instagram!</span>
+            <a href="https://www.instagram.com/eliasjr.jpg/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+
+          <div class="lower-icon">
+            <span class="icon-text">Connect with me on LinkedIn!</span>
+            <a href="https://www.linkedin.com/in/eliasjrh/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+
+        <img
+          src="../static/images/me.png"
+          alt="A picture of Elias Hawa"
+          width="300px;"
+          style="
+            border: 20px rgba(19, 18, 18, 0.699) solid;
+            border-radius: 100%;
+          "
+        />
+
+        <div
+          style="
+            display: flex;
+            width: 100px;
+            flex-wrap: wrap;
+            justify-content: center;
+          "
+        >
+          <div class="upper-icon">
+            <span class="icon-text">Check out what I've done!</span>
+            <a href="https://github.com/EliasJRH"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+
+          <div class="lower-icon">
+            <span class="icon-text">Shoot me an email!</span>
+            <a href="mailto:elias.hawa2468@gmail.com"
+              ><i class="fas fa-inbox" style="color: black;"></i
+            ></a>
+          </div>
         </div>
       </div>
       <div class="interests">
@@ -70,7 +123,7 @@
       <h2>What have I been up to 🤔</h2>
       <div class="present-work-block">
         <img
-          src="static/images/blueprint.jpg"
+          src="../static/images/blueprint.jpg"
           alt="The logo of Carleton University Blueprint"
           width="200px"
         />
@@ -107,7 +160,7 @@
           <a href="https://ccss.carleton.ca/">here</a>!
         </p>
         <img
-          src="static/images/ccsslogo.jpg"
+          src="../static/images/ccsslogo.jpg"
           alt="The logo of the Carleton Computer Science Society"
           width="200px"
         />
@@ -118,7 +171,7 @@
       <h2>What's next 🖥️</h2>
       <div class="future-work-block">
         <img
-          src="static/images/current_job.jpg"
+          src="../static/images/current_job.jpg"
           alt="A picture of my IBM intern supplies"
           width="200px"
         />
