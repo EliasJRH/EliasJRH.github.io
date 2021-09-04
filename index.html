@@ -7,11 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Elias Hawa's homepage" />
     <title>Elias Hawa - Home</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{ url_for('static', filename='static/styles/index.css')}}"
-    />
     <link rel="stylesheet" href="static/styles/index.css" />
     <link rel="shortcut icon" href="static/images/starman.ico" />
     <script
@@ -20,9 +15,13 @@
     ></script>
   </head>
   <body>
-    <img src="static/images/ottawa-background.jpg" class="top-image" alt="" />
-    <div style="height: 450px; margin: -10px 0 20px -10px; position: relative">
-      <div class="vertical-center">
+    <img
+      src="static/images/ottawa-background.jpg"
+      class="top-image"
+      alt="A slightly transparent image of the ottawa skyline, taken at parliament looming over the Ottawa river capturing Alexandra Bridge and the Canadian Hisotry Museum"
+    />
+    <div class="name-container">
+      <div class="name">
         <i>Hi there, my name is</i>
         <p>Elias Hawa</p>
         <i>Software Developer and Computer Science Student</i>
@@ -38,14 +37,7 @@
         <p>Javascript/Node💻</p>
       </div>
       <div class="self-picture">
-        <div
-          style="
-            display: flex;
-            width: 100px;
-            flex-wrap: wrap;
-            justify-content: center;
-          "
-        >
+        <div class="icon-flex">
           <div class="upper-icon">
             <span class="icon-text">Check out my Instagram!</span>
             <a href="https://www.instagram.com/eliasjr.jpg/"
@@ -64,21 +56,10 @@
         <img
           src="static/images/me.png"
           alt="A picture of Elias Hawa"
-          width="300px;"
-          style="
-            border: 20px rgba(19, 18, 18, 0.699) solid;
-            border-radius: 100%;
-          "
+          id="picture-of-me"
         />
 
-        <div
-          style="
-            display: flex;
-            width: 100px;
-            flex-wrap: wrap;
-            justify-content: center;
-          "
-        >
+        <div class="icon-flex">
           <div class="upper-icon">
             <span class="icon-text">Check out what I've done!</span>
             <a href="https://github.com/EliasJRH"
@@ -87,7 +68,7 @@
           </div>
 
           <div class="lower-icon">
-            <span class="icon-text">Shoot me an email!</span>
+            <span class="icon-text" id="email-text">Shoot me an email!</span>
             <a href="mailto:elias.hawa2468@gmail.com"
               ><i class="fas fa-inbox" style="color: black"></i
             ></a>
@@ -136,6 +117,7 @@
         </p>
       </div>
 
+      <hr id="divider1" />
       <br /><br />
 
       <div class="present-work-block">
@@ -176,7 +158,7 @@
           returning as a full time student at Carleton University for Winter
           2021/22
         </p>
-        <p style="margin: 0; font-size: 150px">👁️🐝Ⓜ️</p>
+        <p style="margin: 0; font-size: 140px">👁️🐝Ⓜ️</p>
       </div>
     </div>
 
@@ -187,10 +169,50 @@
       <div class="project-container">
         <div class="project-item">
           <u>Syllogistic Fallacy Trainer</u><br /><br />
-          A desktop application written in Java to aide high-school philosophy
-          students in understanding syllogistic fallacy problems and how to go
-          about solving them.<br /><br />
-          <a href="/projects/syllogisticfallacytrainer">Read more >></a>
+          <span class="project-desc">
+            A desktop application written in Java to aide high-school philosophy
+            students in understanding syllogistic fallacy problems and how to go
+            about solving them</span
+          ><br /><br />
+          <a href="projects/syllogisticfallacytrainer.html">Read more >></a>
+        </div>
+
+        <div class="project-item">
+          <u>Rafflebot.TF</u><br /><br />
+          <span class="project-desc">
+            An application built with Selenium in Java that automates entering
+            raffles on a fan trading website for the online game Team Fortress
+            2</span
+          ><br /><br />
+          <a href="projects/rafflebottf.html">Read more >></a>
+        </div>
+
+        <div class="project-item">
+          <u>Lineup - An Event Management Discord Bot</u><br /><br />
+          <span class="project-desc">
+            An event queue management discord bot created by me along with three
+            other students during a Carleton University's anual 24-hour
+            hackathon, cuHacking</span
+          ><br /><br />
+          <a href="projects/lineup.html">Read more >></a>
+        </div>
+
+        <div class="project-item">
+          <u>Hangman Bot</u><br /><br />
+          <span class="project-desc"
+            >A challenge I participated in during one of my first year
+            programming classes, to create the perfect hangman algorithm</span
+          ><br /><br />
+          <a href="projects/hangman.html">Read more >></a>
+        </div>
+
+        <div class="project-item">
+          <u>Jon Conway's Game Of Life</u><br /><br />
+          <span class="project-desc"
+            >A recreation of Jon Conway's Game Of Life simualtion that I made as
+            an assignment in high school</span
+          ><br /><br />
+          <a href="projects/gameoflife.html">Read more >></a>
         </div>
       </div>
     </div>

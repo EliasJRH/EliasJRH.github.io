@@ -31,6 +31,8 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
   font-family: "EnceladusBold";
   height: 100%;
   width: 100%;
@@ -40,12 +42,18 @@ body {
   opacity: 0.6;
   width: 100vw;
   height: 450px;
-  margin: -10px 0 20px -10px;
   object-fit: cover;
   position: absolute;
 }
 
-.vertical-center {
+.name-container {
+  height: 450px;
+  margin: 0 0 20px 0;
+  position: relative;
+  width: 100vw;
+}
+
+.name {
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -55,17 +63,17 @@ body {
   animation: fadedown 1s ease-out forwards;
 }
 
-.vertical-center p,
-.vertical-center i {
+.name p,
+.name i {
   margin: 0;
   font-family: "EnceladusBold";
 }
 
-.vertical-center p {
+.name p {
   font-size: 50px;
 }
 
-.vertical-center i {
+.name i {
   font-size: larger;
 }
 
@@ -107,10 +115,17 @@ body {
 .self-picture {
   display: grid;
   opacity: 0;
-  width: 540px !important;
+  width: 540px;
+  align-self: center;
   grid-template-columns: 100px 340px 100px;
   grid-template-rows: 340px;
   animation: fadedown 1s ease-in 1s forwards;
+}
+
+#picture-of-me {
+  border: 20px rgba(19, 18, 18, 0.699) solid;
+  border-radius: 100%;
+  width: 300px;
 }
 
 .upper-icon,
@@ -120,6 +135,13 @@ body {
   height: 110px;
   text-align: center;
   line-height: 0.2px;
+}
+
+.icon-flex {
+  display: flex;
+  width: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .upper-icon a,
@@ -175,6 +197,10 @@ body {
   gap: 10px;
 }
 
+#divider1 {
+  margin-top: 75px;
+}
+
 .future-work {
   animation: fadedown 1s ease-in 5s forwards;
 }
@@ -186,13 +212,136 @@ body {
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 
 .project-item {
-  width: 550px;
-  height: 250px;
-  padding: 50px;
+  font-size: 20px;
+  width: 467.5px;
+  height: 212.5px;
+  padding: 30px;
   background-color: black;
   color: white;
+}
+
+.project-item a {
+  text-decoration: none;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+.project-item a:visited {
+  color: inherit;
+}
+
+.project-desc {
+  min-height: 104px;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 415px) and (max-width: 1024px) {
+  .top-image {
+    margin: 0;
+  }
+
+  .self-picture {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .languages {
+    order: 2;
+  }
+
+  .interests {
+    order: 3;
+  }
+
+  .present-work-block,
+  .future-work-block {
+    flex-direction: column;
+  }
+
+  .about-me,
+  .present-work,
+  .future-work,
+  .past-work {
+    padding: 0 80px;
+  }
+
+  .present-work-block img,
+  .future-work-block img {
+    width: inherit;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .top-image {
+    margin: 0;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .languages {
+    order: 2;
+  }
+
+  .interests {
+    order: 3;
+  }
+
+  .self-picture {
+    order: 1;
+    width: inherit;
+    grid-template-rows: 100px 340px 100px;
+    grid-template-columns: 340px;
+  }
+
+  .icon-flex {
+    width: 340px;
+    justify-content: space-between;
+  }
+
+  .upper-icon,
+  .lower-icon {
+    width: 125px;
+  }
+
+  .fas {
+    margin-top: 14px;
+  }
+
+  #email-text {
+    padding: 4px;
+  }
+
+  .about-me,
+  .present-work,
+  .future-work,
+  .past-work {
+    padding: 0 22px;
+  }
+
+  .present-work-block,
+  .future-work-block {
+    flex-direction: column;
+  }
+
+  .present-work-block img,
+  .future-work-block img {
+    width: inherit;
+  }
+
+  .future-work-block p {
+    width: inherit !important;
+  }
+
+  .project-item {
+    height: 260px;
+  }
 }
