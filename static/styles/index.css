@@ -168,6 +168,10 @@ body {
   line-height: inherit;
 }
 
+.fas, .fab{
+  color: black;
+}
+
 .fab {
   margin-top: 8px;
 }
@@ -227,6 +231,7 @@ body {
 
 .project-item a {
   text-decoration: none;
+  color: inherit
 }
 
 .project-item a:hover {
@@ -298,6 +303,7 @@ body {
   .self-picture {
     order: 1;
     width: inherit;
+    margin-bottom: 20px;
     grid-template-rows: 100px 340px 100px;
     grid-template-columns: 340px;
   }
@@ -310,6 +316,10 @@ body {
   .upper-icon,
   .lower-icon {
     width: 125px;
+  }
+
+  .icon-text{
+    line-height: 15px;
   }
 
   .fas {
@@ -339,6 +349,10 @@ body {
 
   .future-work-block p {
     width: inherit !important;
+  }
+
+  .present-work-block img, .future-work-block img{
+    width: 88vw;
   }
 
   .project-item {
