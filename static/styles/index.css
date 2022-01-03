@@ -168,7 +168,8 @@ body {
   line-height: inherit;
 }
 
-.fas, .fab{
+.fas,
+.fab {
   color: black;
 }
 
@@ -231,7 +232,7 @@ body {
 
 .project-item a {
   text-decoration: none;
-  color: inherit
+  color: inherit;
 }
 
 .project-item a:hover {
@@ -247,16 +248,11 @@ body {
   display: inline-block;
 }
 
-@media only screen and (min-width: 1023px) and (max-width: 1804px){
-  .intro{
+@media only screen and (min-width: 1023px) and (max-width: 1804px) {
+  .intro {
     flex-wrap: nowrap;
   }
-
-  .present-work-block img{
-    color:red;
-  }
 }
-
 
 @media only screen and (min-width: 415px) and (max-width: 1024px) {
   .top-image {
@@ -329,7 +325,7 @@ body {
     width: 125px;
   }
 
-  .icon-text{
+  .icon-text {
     line-height: 15px;
   }
 
@@ -362,7 +358,8 @@ body {
     width: inherit !important;
   }
 
-  .present-work-block img, .future-work-block img{
+  .present-work-block img,
+  .future-work-block img {
     width: 88vw;
   }
 
