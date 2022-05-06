@@ -148,11 +148,8 @@ body {
 .upper-icon a,
 .lower-icon a {
   text-decoration: none;
-}
-
-.upper-icon a:visited,
-.lower-icon a:visited {
-  color: inherit;
+  background-color: inherit;
+  color: inherit
 }
 
 .upper-icon {
@@ -167,12 +164,6 @@ body {
 .icon-text {
   font-size: 15px;
   line-height: inherit;
-}
-
-.fas,
-.fab {
-  background-color: inherit;
-  color: inherit;
 }
 
 .fab {
