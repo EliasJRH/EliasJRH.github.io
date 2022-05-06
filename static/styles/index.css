@@ -149,7 +149,7 @@ body {
 .lower-icon a {
   text-decoration: none;
   background-color: inherit;
-  color: inherit
+  color: inherit;
 }
 
 .upper-icon {
@@ -166,12 +166,16 @@ body {
   line-height: inherit;
 }
 
-.fab {
+.fa-brands {
   margin-top: 8px;
 }
 
-.fas {
+.fa-solid {
   margin-top: 26px;
+}
+
+.fa-solid2 {
+  margin-top: 11px;
 }
 
 .about-me,
