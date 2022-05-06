@@ -36,6 +36,8 @@ body {
   font-family: "EnceladusBold";
   height: 100%;
   width: 100%;
+  background-color: rgb(18, 18, 18);
+  color: rgb(255, 255, 255, 0.85);
 }
 
 .top-image {
@@ -48,7 +50,6 @@ body {
 
 .name-container {
   height: 450px;
-  margin: 0 0 20px 0;
   position: relative;
   width: 100vw;
 }
@@ -170,7 +171,8 @@ body {
 
 .fas,
 .fab {
-  color: black;
+  background-color: inherit;
+  color: inherit;
 }
 
 .fab {
@@ -227,7 +229,8 @@ body {
   height: 212.5px;
   padding: 30px;
   background-color: black;
-  color: white;
+  color: rgb(255, 255, 255, 0.85);
+  border: 2px solid rgb(255, 255, 255, 0.85);
 }
 
 .project-item a {

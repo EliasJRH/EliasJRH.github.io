@@ -15,6 +15,8 @@
     <title>Elias Hawa - Home</title>
     <link rel="stylesheet" href="static/styles/index.css" />
     <link rel="shortcut icon" href="static/images/starman.ico" />
+    <link rel="stylesheet" href="static/styles/darkmodetoggle.css" />
+    <script src="static/scipts/darkmodetoggle.js"></script>
     <script
       src="https://kit.fontawesome.com/83077f7eb5.js"
       crossorigin="anonymous"
@@ -26,11 +28,37 @@
       class="top-image"
       alt="A slightly transparent image of the ottawa skyline, taken at parliament looming over the Ottawa river capturing Alexandra Bridge and the Canadian Hisotry Museum"
     />
+
     <div class="name-container">
       <div class="name">
         <i>Hi there, my name is</i>
         <p>Elias Hawa</p>
         <i>Software Developer and Computer Science Student</i>
+      </div>
+    </div>
+
+    <!-- I did not make this
+    credit goes to: Steve Walson on CodePen.io
+    https://codepen.io/steve_walson/pen/oNprgre 
+    -->
+    <div class="container">
+      <div class="daynight">
+        <label for="dark-mode-check-box">
+          <input
+            type="checkbox"
+            name=""
+            id="dark-mode-check-box"
+            onclick="toggleDarkMode()"
+            autocomplete="off"
+            checked
+          />
+          <div class="toggle">
+            <div class="cloud"></div>
+            <div class="star"></div>
+            <div class="sea"></div>
+            <div class="mountains"></div>
+          </div>
+        </label>
       </div>
     </div>
 
@@ -76,7 +104,7 @@
           <div class="lower-icon">
             <span class="icon-text" id="email-text">Shoot me an email!</span>
             <a href="mailto:elias.hawa2468@gmail.com"
-              ><i class="fas fa-inbox"></i
+              ><i class="fas fa-inbox" id="inbox"></i
             ></a>
           </div>
         </div>
