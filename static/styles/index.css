@@ -279,7 +279,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 415px) and (max-width: 1024px) {
+@media only screen and (min-width: 429px) and (max-width: 1024px) {
   .top-image {
     margin: 0;
   }
@@ -333,10 +333,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 415px) {
-  body {
-    color: green;
-  }
+@media only screen and (max-width: 429px) {
 
   .top-image {
     margin: 0;
@@ -348,18 +345,26 @@ body {
 
   .languages {
     order: 2;
+    width: 80%;
+    margin-bottom: 20px;
   }
 
   .interests {
     order: 3;
+    width: 80%;
+    margin-bottom: 20px;
   }
 
   .self-picture {
     order: 1;
     width: inherit;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     grid-template-rows: 100px 340px 100px;
     grid-template-columns: 340px;
+  }
+
+  .about-me h2{
+    text-align: center;
   }
 
   .icon-flex {
@@ -381,7 +386,13 @@ body {
   }
 
   #email-text {
-    padding: 4px;
+    display: inherit;
+    padding: 8px 0 14px 0;
+    line-height: 19px;
+  }
+
+  .fa-inbox{
+    margin: 0;
   }
 
   .about-me,
@@ -391,9 +402,25 @@ body {
     padding: 0 22px;
   }
 
+  .present-work h2{
+    text-align: center;
+  }
+
+  #pwp1{
+    width: 100%; 
+  }
+
+  #emojis1{
+    width: 100%;
+  }
+
   .present-work-block,
   .future-work-block {
     flex-direction: column;
+  }
+
+  .future-work h2{
+    text-align: center;
   }
 
   .present-work-block img,
@@ -408,9 +435,12 @@ body {
   .present-work-block img,
   .future-work-block img {
     width: 88vw;
+    height: auto;
   }
 
   .project-item {
-    height: 260px;
+    width: 100%;
+    height: 250px;
+    font-size: 18px;
   }
 }
