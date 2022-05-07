@@ -254,16 +254,12 @@ body {
 }
 
 @media only screen and (min-width: 1023px) and (max-width: 1804px) {
-  body{
-    color: blue;
-  }
-
   .intro {
     flex-wrap: nowrap;
   }
 
   .project-item{
-    width: 35%;
+    width: 40%;
   }
 
   .present-work img{
