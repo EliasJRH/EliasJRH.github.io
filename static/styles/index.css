@@ -39,7 +39,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: rgb(18, 18, 18);
-  color: rgb(255, 255, 255, 0.85);
+  color: rgb(249, 249, 249, 0.85);
 }
 
 .top-image {
@@ -241,9 +241,7 @@ body {
   width: 26.7%;
   height: 212.5px;
   padding: 30px;
-  background-color: black;
-  color: rgb(255, 255, 255, 0.85);
-  border: 2px solid rgb(255, 255, 255, 0.85);
+  border: 2px solid rgb(249, 249, 249, 0.85);
 }
 
 .project-item a {
