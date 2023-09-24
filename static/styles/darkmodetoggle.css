@@ -200,51 +200,69 @@ https://codepen.io/steve_walson/pen/oNprgre
   }
 }
 
-@keyframes fade-to-light {
-  from {
-    background-color: rgb(18, 18, 18);
-    color: rgb(249, 249, 249, 0.85);
-  }
-  to {
-    background-color: rgb(249, 249, 249, 0.85);
-    color: rgb(18, 18, 18);
-  }
-}
-
 @keyframes fade-to-dark {
   from {
-    background-color: rgb(249, 249, 249, 0.85);
-    color: rgb(18, 18, 18);
+    background-color: var(--dark-theme-color);
+    color: var(--light-theme-color);
   }
   to {
-    background-color: rgb(18, 18, 18);
-    color: rgb(249, 249, 249, 0.85);
+    background-color: var(--light-theme-color);
+    color: var(--dark-theme-color);
   }
 }
 
-@keyframes fade-to-light-project-item {
+@keyframes fade-to-light {
   from {
-    background-color: rgb(18, 18, 18);
-    color: rgb(249, 249, 249, 0.85);
-    border: 2px solid rgb(249, 249, 249, 0.85);
+    background-color: var(--light-theme-color);
+    color: var(--dark-theme-color);
   }
   to {
-    background-color: rgb(249, 249, 249, 0.85);
-    color: rgb(18, 18, 18);
-    border: 2px solid rgb(18, 18, 18);
+    background-color: var(--dark-theme-color);
+    color: var(--light-theme-color);
   }
 }
 
 @keyframes fade-to-dark-project-item {
   from {
-    background-color: rgb(249, 249, 249, 0.85);
-    color: rgb(18, 18, 18);
-    border: 2px solid rgb(18, 18, 18);
+    background-color: var(--dark-theme-color);
+    color: var(--light-theme-color);
+    border: 2px solid var(--light-theme-color);
   }
   to {
-    background-color: rgb(18, 18, 18);
-    color: rgb(249, 249, 249, 0.85);
-    border: 2px solid rgb(249, 249, 249, 0.85);
+    background-color: var(--light-theme-color);
+    color: var(--dark-theme-color);
+    border: 2px solid var(--dark-theme-color);
+  }
+}
+
+@keyframes fade-to-light-project-item {
+  from {
+    background-color: var(--light-theme-color);
+    color: var(--dark-theme-color);
+    border: 2px solid var(--dark-theme-color);
+  }
+  to {
+    background-color: var(--dark-theme-color);
+    color: var(--light-theme-color);
+    border: 2px solid var(--light-theme-color);
+  }
+}
+
+@keyframes fade-to-dark-flag {
+  from {
+    border: 2px solid var(--light-theme-color);
+  }
+  to {
+    border: 2px solid var(--dark-theme-color);
+  }
+}
+
+@keyframes fade-to-light-flag {
+  from {
+    border: 2px solid var(--dark-theme-color);
+  }
+  to {
+    border: 2px solid var(--light-theme-color);
   }
 }
 

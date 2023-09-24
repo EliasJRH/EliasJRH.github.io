@@ -2,10 +2,12 @@
   font-family: "EnceladusReg";
   src: url("../EnceladusRegular-d9xyE.otf");
 }
+
 @font-face {
   font-family: "EnceladusBold";
   src: url("../fonts/EnceladusBold-7BrER.otf");
 }
+
 @font-face {
   font-family: "EnceladusDemiBold";
   src: url("../fonts/EnceladusDemibold-mL18a.otf");
@@ -21,13 +23,10 @@
   }
 }
 
-@keyframes elevate {
-  from {
-    border: none;
-  }
-  to {
-    border: 2px solid black;
-  }
+:root {
+  --dark-theme-color: rgb(18, 18, 18);
+  --light-theme-color: rgb(249, 249, 249, 0.85);
+  
 }
 
 /* These lines below shouldn't change */
@@ -38,8 +37,8 @@ body {
   font-family: "EnceladusBold";
   height: 100%;
   width: 100%;
-  background-color: rgb(18, 18, 18);
-  color: rgb(249, 249, 249, 0.85);
+  background-color: var(--dark-theme-color);
+  color: var(--light-theme-color);
 }
 
 .top-image {
@@ -241,7 +240,7 @@ body {
   width: 26.7%;
   height: 212.5px;
   padding: 30px;
-  border: 2px solid rgb(249, 249, 249, 0.85);
+  border: 2px solid var(--light-theme-color);
 }
 
 .project-item a {
