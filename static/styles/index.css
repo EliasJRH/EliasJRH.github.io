@@ -79,7 +79,7 @@ body {
   font-size: larger;
 }
 
-.intro {
+.intro-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -94,10 +94,10 @@ body {
 .languages,
 .interests,
 .self,
-.about-me,
+.about-me-container,
 .present-work,
 .future-work,
-.past-work {
+.personal-projects-container {
   opacity: 0;
   font-size: 25px;
 }
@@ -184,18 +184,18 @@ body {
   margin-top: 11px;
 }
 
-.about-me,
+.about-me-container,
 .present-work,
 .future-work,
-.past-work {
+.personal-projects-container {
   padding: 0 120px;
 }
 
-.about-me {
+.about-me-container {
   animation: fadedown 1s ease-in 3s forwards;
 }
 
-.present-work {
+.timeline-container {
   animation: fadedown 1s ease-in 4s forwards;
 }
 
@@ -220,12 +220,8 @@ body {
   margin-top: 75px;
 }
 
-.future-work {
+.personal-projects-container {
   animation: fadedown 1s ease-in 5s forwards;
-}
-
-.past-work {
-  animation: fadedown 1s ease-in 4s forwards;
 }
 
 .project-container {
@@ -262,7 +258,7 @@ body {
 }
 
 @media only screen and (min-width: 1023px) and (max-width: 1804px) {
-  .intro {
+  .intro-container {
     flex-wrap: nowrap;
   }
 
@@ -308,10 +304,10 @@ body {
     flex-direction: column;
   }
 
-  .about-me,
+  .about-me-container,
   .present-work,
   .future-work,
-  .past-work {
+  .personal-projects-container {
     padding: 0 80px;
   }
 
@@ -321,7 +317,7 @@ body {
     height: auto;
   }
 
-  .past-work {
+  .personal-projects-container {
     padding: 0 30px;
   }
 
@@ -360,7 +356,7 @@ body {
     grid-template-columns: 340px;
   }
 
-  .about-me h2{
+  .about-me-container h2{
     text-align: center;
   }
 
@@ -392,10 +388,10 @@ body {
     margin: 0;
   }
 
-  .about-me,
+  .about-me-container,
   .present-work,
   .future-work,
-  .past-work {
+  .personal-projects-container {
     padding: 0 22px;
   }
 
