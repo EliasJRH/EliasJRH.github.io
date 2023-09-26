@@ -180,6 +180,17 @@
 
 /* ================ Timeline Media Queries ================ */
 
+@media only screen and (min-width: 429px) and (max-width: 1024px) {
+  .timeline:before {
+    left: 12%;
+  }
+
+  .direction-r,
+  .direction-l{
+    left: 16.34%
+  }
+}
+
 @media screen and (max-width: 660px) {
 
 .timeline {
