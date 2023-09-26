@@ -196,6 +196,7 @@ body {
 }
 
 .timeline-container {
+  opacity: 0;
   animation: fadedown 1s ease-in 4s forwards;
 }
 
