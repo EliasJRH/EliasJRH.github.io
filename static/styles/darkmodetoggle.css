@@ -250,18 +250,44 @@ https://codepen.io/steve_walson/pen/oNprgre
 
 @keyframes fade-to-light-timeline-flag {
   from {
+    background-color: var(--dark-theme-color-timeline);
     border: 2px solid var(--light-theme-color);
   }
   to {
+    background-color: var(--light-theme-color);
     border: 2px solid var(--dark-theme-color);
   }
 }
 
 @keyframes fade-to-dark-timeline-flag {
   from {
+    background-color: var(--light-theme-color);
     border: 2px solid var(--dark-theme-color);
   }
   to {
+    background-color: var(--dark-theme-color-timeline);
+    border: 2px solid var(--light-theme-color);
+  }
+}
+
+@keyframes fade-to-light-timeline-desc {
+  from {
+    background-color: var(--dark-theme-color-timeline);
+    border: 2px solid var(--light-theme-color);
+  }
+  to {
+    background-color: var(--light-theme-color);
+    border: 2px solid var(--dark-theme-color);
+  }
+}
+
+@keyframes fade-to-dark-timeline-desc {
+  from {
+    background-color: var(--light-theme-color);
+    border: 2px solid var(--dark-theme-color);
+  }
+  to {
+    background-color: var(--dark-theme-color-timeline);
     border: 2px solid var(--light-theme-color);
   }
 }

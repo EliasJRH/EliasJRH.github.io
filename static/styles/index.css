@@ -25,8 +25,8 @@
 
 :root {
   --dark-theme-color: rgb(18, 18, 18);
-  --light-theme-color: rgb(249, 249, 249, 0.85);
-  
+  --dark-theme-color-timeline: rgba(18, 18, 18, 0.85);
+  --light-theme-color: rgb(249, 249, 249, 0.85);  
 }
 
 /* These lines below shouldn't change */
