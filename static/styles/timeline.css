@@ -181,12 +181,12 @@
 
 @media only screen and (min-width: 429px) and (max-width: 1024px) {
   .timeline:before {
-    left: 12%;
+    left:13%;
   }
 
   .direction-r,
   .direction-l{
-    left: 16.34%
+    left: 17.4%
   }
 }
 
@@ -218,7 +218,7 @@
 }
 
 .flag {
-	background-color: var(--dark-theme-color-time-desc);
+	background-color: var(--dark-theme-color-timeline);
 	z-index: 15;
 }
 
@@ -275,7 +275,8 @@
 	position: relative;
 	margin: 1em 0 0 0;
 	padding: 1em;
-	/* background: rgb(245,245,245); */
+	background-color: var(--dark-theme-color-timeline);
+  border: 2px solid var(--light-theme-color);
 	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
 	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
 	box-shadow: 0 0 1px rgba(0,0,0,0.20);

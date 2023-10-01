@@ -102,6 +102,11 @@ body {
   font-size: 25px;
 }
 
+.timeline-container h2{
+  opacity: inherit;
+  font-size: 33px;
+}
+
 #pwp1 {
   margin: 0;
   width: 75%;
@@ -185,6 +190,7 @@ body {
 }
 
 .about-me-container,
+.timeline-container h2,
 .present-work,
 .future-work,
 .personal-projects-container {
@@ -310,6 +316,7 @@ body {
   }
 
   .about-me-container,
+  .timeline-container h2,
   .present-work,
   .future-work,
   .personal-projects-container {
@@ -361,7 +368,10 @@ body {
     grid-template-columns: 340px;
   }
 
-  .about-me-container h2{
+  .about-me-container h2,
+  .timeline-container h2,
+  .present-work h2,
+  .future-work h2{
     text-align: center;
   }
 
@@ -394,14 +404,11 @@ body {
   }
 
   .about-me-container,
+  .timeline-container h2,
   .present-work,
   .future-work,
   .personal-projects-container {
     padding: 0 22px;
-  }
-
-  .present-work h2{
-    text-align: center;
   }
 
   #pwp1{
@@ -415,10 +422,6 @@ body {
   .present-work-block,
   .future-work-block {
     flex-direction: column;
-  }
-
-  .future-work h2{
-    text-align: center;
   }
 
   .present-work-block img,
