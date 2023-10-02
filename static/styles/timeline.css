@@ -256,12 +256,10 @@
 	z-index: 14;
 }
 
-.direction-l .time-wrapper {
-	float: none;
-}
-
+.direction-l .time-wrapper,
 .direction-r .time-wrapper {
 	float: none;
+  margin-top: 8.8px;
 }
 
 .desc {
